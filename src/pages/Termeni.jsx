@@ -1,4 +1,3 @@
-import React from "react";
 import "./Termeni.css";
 
 function Termeni() {

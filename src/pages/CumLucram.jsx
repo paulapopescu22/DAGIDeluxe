@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./CumLucram.css";
 
 const etape = [

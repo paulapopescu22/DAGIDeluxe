@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import "./Hol.css"; // poți folosi un CSS separat pentru Hol
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Copii() {
+function Hol() {
   const settings = {
     dots: true,
     infinite: true,
@@ -39,7 +39,7 @@ function Copii() {
   };
 
   const materials = [
-      {
+    {
       title: "Mobilă de Hol din MDF Vopsit",
       img: "/images/Materiale/vopsit.jpg",
       desc: "MDF vopsit oferă un finisaj elegant și neted, perfect pentru holuri moderne sau clasice, durabil și personalizabil.",
@@ -57,10 +57,9 @@ function Copii() {
   ];
 
   const images = [
-    "/images/images-kids/p25.jpg",
-    "/images/images-kids/p26.jpg",
-    "/images/images-kids/p27.jpg",
-    
+    "/images/images-h/p30.jpg",
+    "/images/images-h/p31.jpg",
+    "/images/images-h/p32.jpg",
   ];
 
   return (
@@ -72,7 +71,7 @@ function Copii() {
         transition={{ duration: 0.8 }}
         style={{ textAlign: "center", fontSize: "2.8rem", marginBottom: "20px", color: "#6b1f3f" }}
       >
-        Mobilă pentru Copii la Comandă
+        Mobilă de Hol la Comandă
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -80,7 +79,7 @@ function Copii() {
         transition={{ duration: 0.8, delay: 0.3 }}
         style={{ textAlign: "center", fontSize: "1.3rem", marginBottom: "30px", color: "#1a1a1a" }}
       >
-        Camere vesele, sigure și personalizate.
+        Locul în care primul contact cu casa ta contează.
       </motion.p>
 
       {/* SLIDER */}
@@ -90,7 +89,7 @@ function Copii() {
             <div key={index}>
               <motion.img
                 src={img}
-                alt={`Camera Copii ${index + 1}`}
+                alt={`Hol ${index + 1}`}
                 style={{ width: "100%", height: "400px", objectFit: "cover" }}
                 initial={{ opacity: 0.7 }}
                 animate={{ opacity: 1 }}
@@ -101,7 +100,7 @@ function Copii() {
         </Slider>
       </div>
 
-      {/* SECȚIUNE: Sanctuarul copilului */}
+      {/* SECȚIUNE: Centrul de primire */}
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -115,19 +114,19 @@ function Copii() {
           boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
         }}
       >
-        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Sanctuarul copilului</h2>
+        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Centrul de primire al casei</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Camera copilului trebuie să fie veselă, sigură și organizată. La Dagi Deluxe proiectăm mobilier care combină funcționalitatea cu creativitatea și siguranța.
+          Holul este primul contact vizual cu casa ta. Aici trebuie să fie funcțional, elegant și să lase impresia corectă. La Dagi Deluxe, înțelegem că holul trebuie să fie primitor și să optimizeze spațiul chiar și în încăperi mici.
         </p>
 
-        <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Capcana seturilor standard</h3>
+        <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Capcana mobilierului standard</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Mobilierul de serie poate să nu se potrivească dimensiunilor camerei și nevoilor copilului. Noi personalizăm fiecare piesă pentru a crea un spațiu vesel și practic.
+          Multe holuri devin dezordonate din cauza mobilierului prefab care nu se potrivește cu spațiul. Noi creăm structuri care se integrează perfect și optimizează fluxul.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Echilibrul Dagi Deluxe</h3>
         <p style={{ fontSize: "1.1rem" }}>
-          Folosim materiale sigure, culori vesele și soluții de depozitare inteligente pentru a transforma camera într-un loc distractiv și funcțional.
+          Folosim materiale durabile, feronerie de top și soluții inteligente de depozitare pentru a transforma holul într-un spațiu practic, estetic și armonios.
         </p>
       </motion.div>
 
@@ -195,22 +194,22 @@ function Copii() {
           DE CE SĂ LUCREZI CU UN ATELIER PRECUM DAGI DELUXE?
         </h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Camerele copiilor trebuie să fie sigure, personalizate și vesele. Colaborarea cu Dagi Deluxe oferă avantaje pe care producția de masă le ignoră.
+          Holul este un spațiu de tranziție care merită atenție. Colaborarea cu Dagi Deluxe oferă avantaje pe care producția de masă le ignoră.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Integrare arhitecturală</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Creăm mobilier care se potrivește perfect cu dimensiunile și forma camerei copilului.
+          Creăm mobilier care se integrează în structura casei și optimizează spațiul.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Soluții pentru lumini și depozitare</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Totul este gândit pentru funcționalitate maximă, fără dezordine vizuală.
+          Holul devine funcțional și estetic, fără cabluri sau obiecte dezordonate.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Personalitate, nu catalog</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Tu alegi culorile și finisajele, noi ne asigurăm că camera copilului arată vesel și armonios.
+          Tu alegi culorile și finisajele, noi ne asigurăm că totul funcționează armonios.
         </p>
       </motion.div>
 
@@ -230,10 +229,10 @@ function Copii() {
       >
         <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>VREI O DISCUȚIE CONCRETĂ?</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Imaginează-ți o cameră veselă și organizată, unde copilul se joacă în siguranță și totul este la locul său.
+          Imaginează-ți o seară de vineri. Holul tău arată ordonat, elegant și primitor, iar toate obiectele au locul lor.
         </p>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Nu trebuie să alegi mobila astăzi. Dar dacă simți că camera copilului poate fi mai mult decât un simplu spațiu de joacă, suntem aici să explorăm opțiunile.
+          Nu trebuie să alegi mobila astăzi. Dar dacă simți că holul tău poate fi mai mult decât un simplu spațiu de trecere, suntem aici să explorăm opțiunile.
         </p>
         <p style={{ fontSize: "1.1rem" }}>
           Hai să discutăm pe concret despre spațiul tău: <br/>
@@ -245,4 +244,4 @@ function Copii() {
   );
 }
 
-export default Copii;
+export default Hol;

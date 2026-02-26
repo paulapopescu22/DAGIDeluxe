@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import "./Hol.css"; // poți folosi un CSS separat pentru Hol
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Hol() {
+function Dressing() {
   const settings = {
     dots: true,
     infinite: true,
@@ -40,7 +38,7 @@ function Hol() {
   };
 
   const materials = [
-    {
+      {
       title: "Mobilă de Hol din MDF Vopsit",
       img: "/images/Materiale/vopsit.jpg",
       desc: "MDF vopsit oferă un finisaj elegant și neted, perfect pentru holuri moderne sau clasice, durabil și personalizabil.",
@@ -58,9 +56,16 @@ function Hol() {
   ];
 
   const images = [
-    "/images/images-h/p30.jpg",
-    "/images/images-h/p31.jpg",
-    "/images/images-h/p32.jpg",
+    "/images/images-dressing/p17.jpg",
+    "/images/images-dressing/p18.jpg",
+    "/images/images-dressing/p19.jpg",
+    "/images/images-dressing/p20.jpg",
+    "/images/images-dressing/p21.jpg",
+    "/images/images-dressing/p22.jpg",
+    "/images/images-dressing/p23.jpg",
+    "/images/images-dressing/p24.jpg",
+
+
   ];
 
   return (
@@ -72,7 +77,7 @@ function Hol() {
         transition={{ duration: 0.8 }}
         style={{ textAlign: "center", fontSize: "2.8rem", marginBottom: "20px", color: "#6b1f3f" }}
       >
-        Mobilă de Hol la Comandă
+        Dressing la Comandă
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -80,7 +85,7 @@ function Hol() {
         transition={{ duration: 0.8, delay: 0.3 }}
         style={{ textAlign: "center", fontSize: "1.3rem", marginBottom: "30px", color: "#1a1a1a" }}
       >
-        Locul în care primul contact cu casa ta contează.
+        Spații organizate și elegante pentru garderoba ta.
       </motion.p>
 
       {/* SLIDER */}
@@ -90,7 +95,7 @@ function Hol() {
             <div key={index}>
               <motion.img
                 src={img}
-                alt={`Hol ${index + 1}`}
+                alt={`Dressing ${index + 1}`}
                 style={{ width: "100%", height: "400px", objectFit: "cover" }}
                 initial={{ opacity: 0.7 }}
                 animate={{ opacity: 1 }}
@@ -101,7 +106,7 @@ function Hol() {
         </Slider>
       </div>
 
-      {/* SECȚIUNE: Centrul de primire */}
+      {/* SECȚIUNE: Organizare și stil */}
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -115,19 +120,19 @@ function Hol() {
           boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
         }}
       >
-        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Centrul de primire al casei</h2>
+        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Organizare și stil</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Holul este primul contact vizual cu casa ta. Aici trebuie să fie funcțional, elegant și să lase impresia corectă. La Dagi Deluxe, înțelegem că holul trebuie să fie primitor și să optimizeze spațiul chiar și în încăperi mici.
+          Dressingul trebuie să fie funcțional, elegant și adaptat garderobei tale. La Dagi Deluxe creăm soluții personalizate pentru fiecare centimetru pătrat.
         </p>
 
-        <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Capcana mobilierului standard</h3>
+        <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Capcana seturilor standard</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Multe holuri devin dezordonate din cauza mobilierului prefab care nu se potrivește cu spațiul. Noi creăm structuri care se integrează perfect și optimizează fluxul.
+          Dressingurile standard nu valorifică spațiul și nu se potrivesc cu nevoile tale. Noi personalizăm fiecare element pentru maximă eficiență.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Echilibrul Dagi Deluxe</h3>
         <p style={{ fontSize: "1.1rem" }}>
-          Folosim materiale durabile, feronerie de top și soluții inteligente de depozitare pentru a transforma holul într-un spațiu practic, estetic și armonios.
+          Folosim materiale premium, design ergonomic și soluții inteligente de depozitare pentru un dressing care îmbină frumusețea cu funcționalitatea.
         </p>
       </motion.div>
 
@@ -195,22 +200,22 @@ function Hol() {
           DE CE SĂ LUCREZI CU UN ATELIER PRECUM DAGI DELUXE?
         </h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Holul este un spațiu de tranziție care merită atenție. Colaborarea cu Dagi Deluxe oferă avantaje pe care producția de masă le ignoră.
+          Dressingurile personalizate oferă soluții de depozitare optimizate, materiale premium și design adaptat nevoilor tale.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Integrare arhitecturală</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Creăm mobilier care se integrează în structura casei și optimizează spațiul.
+          Creăm dressinguri care se potrivesc perfect cu dimensiunile și arhitectura camerei tale.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Soluții pentru lumini și depozitare</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Holul devine funcțional și estetic, fără cabluri sau obiecte dezordonate.
+          Design inteligent, iluminat elegant și compartimentare practică pentru maximă funcționalitate.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Personalitate, nu catalog</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Tu alegi culorile și finisajele, noi ne asigurăm că totul funcționează armonios.
+          Tu alegi finisajele și culorile, noi realizăm un dressing care exprimă stilul tău.
         </p>
       </motion.div>
 
@@ -230,13 +235,13 @@ function Hol() {
       >
         <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>VREI O DISCUȚIE CONCRETĂ?</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Imaginează-ți o seară de vineri. Holul tău arată ordonat, elegant și primitor, iar toate obiectele au locul lor.
+          Imaginează-ți un dressing organizat, elegant și adaptat garderobei tale.
         </p>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Nu trebuie să alegi mobila astăzi. Dar dacă simți că holul tău poate fi mai mult decât un simplu spațiu de trecere, suntem aici să explorăm opțiunile.
+          Nu trebuie să alegi astăzi. Dacă vrei un dressing care să-ți transforme spațiul, suntem aici să explorăm opțiunile.
         </p>
         <p style={{ fontSize: "1.1rem" }}>
-          Hai să discutăm pe concret despre spațiul tău: <br/>
+          Hai să discutăm pe concret despre dressingul tău: <br/>
           <strong>Telefon / WhatsApp:</strong> 0721072995 <br/>
           <strong>Web:</strong> <a href="https://dagideluxe.ro" target="_blank" rel="noreferrer" style={{ color: "#6b1f3f" }}>dagideluxe.ro</a>
         </p>
@@ -245,4 +250,4 @@ function Hol() {
   );
 }
 
-export default Hol;
+export default Dressing;

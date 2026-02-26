@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Dressing() {
+function Copii() {
   const settings = {
     dots: true,
     infinite: true,
@@ -57,16 +56,10 @@ function Dressing() {
   ];
 
   const images = [
-    "/images/images-dressing/p17.jpg",
-    "/images/images-dressing/p18.jpg",
-    "/images/images-dressing/p19.jpg",
-    "/images/images-dressing/p20.jpg",
-    "/images/images-dressing/p21.jpg",
-    "/images/images-dressing/p22.jpg",
-    "/images/images-dressing/p23.jpg",
-    "/images/images-dressing/p24.jpg",
-
-
+    "/images/images-kids/p25.jpg",
+    "/images/images-kids/p26.jpg",
+    "/images/images-kids/p27.jpg",
+    
   ];
 
   return (
@@ -78,7 +71,7 @@ function Dressing() {
         transition={{ duration: 0.8 }}
         style={{ textAlign: "center", fontSize: "2.8rem", marginBottom: "20px", color: "#6b1f3f" }}
       >
-        Dressing la Comandă
+        Mobilă pentru Copii la Comandă
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -86,7 +79,7 @@ function Dressing() {
         transition={{ duration: 0.8, delay: 0.3 }}
         style={{ textAlign: "center", fontSize: "1.3rem", marginBottom: "30px", color: "#1a1a1a" }}
       >
-        Spații organizate și elegante pentru garderoba ta.
+        Camere vesele, sigure și personalizate.
       </motion.p>
 
       {/* SLIDER */}
@@ -96,7 +89,7 @@ function Dressing() {
             <div key={index}>
               <motion.img
                 src={img}
-                alt={`Dressing ${index + 1}`}
+                alt={`Camera Copii ${index + 1}`}
                 style={{ width: "100%", height: "400px", objectFit: "cover" }}
                 initial={{ opacity: 0.7 }}
                 animate={{ opacity: 1 }}
@@ -107,7 +100,7 @@ function Dressing() {
         </Slider>
       </div>
 
-      {/* SECȚIUNE: Organizare și stil */}
+      {/* SECȚIUNE: Sanctuarul copilului */}
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -121,19 +114,19 @@ function Dressing() {
           boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
         }}
       >
-        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Organizare și stil</h2>
+        <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>Sanctuarul copilului</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Dressingul trebuie să fie funcțional, elegant și adaptat garderobei tale. La Dagi Deluxe creăm soluții personalizate pentru fiecare centimetru pătrat.
+          Camera copilului trebuie să fie veselă, sigură și organizată. La Dagi Deluxe proiectăm mobilier care combină funcționalitatea cu creativitatea și siguranța.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Capcana seturilor standard</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Dressingurile standard nu valorifică spațiul și nu se potrivesc cu nevoile tale. Noi personalizăm fiecare element pentru maximă eficiență.
+          Mobilierul de serie poate să nu se potrivească dimensiunilor camerei și nevoilor copilului. Noi personalizăm fiecare piesă pentru a crea un spațiu vesel și practic.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Echilibrul Dagi Deluxe</h3>
         <p style={{ fontSize: "1.1rem" }}>
-          Folosim materiale premium, design ergonomic și soluții inteligente de depozitare pentru un dressing care îmbină frumusețea cu funcționalitatea.
+          Folosim materiale sigure, culori vesele și soluții de depozitare inteligente pentru a transforma camera într-un loc distractiv și funcțional.
         </p>
       </motion.div>
 
@@ -201,22 +194,22 @@ function Dressing() {
           DE CE SĂ LUCREZI CU UN ATELIER PRECUM DAGI DELUXE?
         </h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Dressingurile personalizate oferă soluții de depozitare optimizate, materiale premium și design adaptat nevoilor tale.
+          Camerele copiilor trebuie să fie sigure, personalizate și vesele. Colaborarea cu Dagi Deluxe oferă avantaje pe care producția de masă le ignoră.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Integrare arhitecturală</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Creăm dressinguri care se potrivesc perfect cu dimensiunile și arhitectura camerei tale.
+          Creăm mobilier care se potrivește perfect cu dimensiunile și forma camerei copilului.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Soluții pentru lumini și depozitare</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Design inteligent, iluminat elegant și compartimentare practică pentru maximă funcționalitate.
+          Totul este gândit pentru funcționalitate maximă, fără dezordine vizuală.
         </p>
 
         <h3 style={{ marginBottom: "15px", fontSize: "1.5rem" }}>Personalitate, nu catalog</h3>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Tu alegi finisajele și culorile, noi realizăm un dressing care exprimă stilul tău.
+          Tu alegi culorile și finisajele, noi ne asigurăm că camera copilului arată vesel și armonios.
         </p>
       </motion.div>
 
@@ -236,13 +229,13 @@ function Dressing() {
       >
         <h2 style={{ marginBottom: "20px", fontSize: "2rem", color: "#6b1f3f" }}>VREI O DISCUȚIE CONCRETĂ?</h2>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Imaginează-ți un dressing organizat, elegant și adaptat garderobei tale.
+          Imaginează-ți o cameră veselă și organizată, unde copilul se joacă în siguranță și totul este la locul său.
         </p>
         <p style={{ marginBottom: "20px", fontSize: "1.1rem" }}>
-          Nu trebuie să alegi astăzi. Dacă vrei un dressing care să-ți transforme spațiul, suntem aici să explorăm opțiunile.
+          Nu trebuie să alegi mobila astăzi. Dar dacă simți că camera copilului poate fi mai mult decât un simplu spațiu de joacă, suntem aici să explorăm opțiunile.
         </p>
         <p style={{ fontSize: "1.1rem" }}>
-          Hai să discutăm pe concret despre dressingul tău: <br/>
+          Hai să discutăm pe concret despre spațiul tău: <br/>
           <strong>Telefon / WhatsApp:</strong> 0721072995 <br/>
           <strong>Web:</strong> <a href="https://dagideluxe.ro" target="_blank" rel="noreferrer" style={{ color: "#6b1f3f" }}>dagideluxe.ro</a>
         </p>
@@ -251,4 +244,4 @@ function Dressing() {
   );
 }
 
-export default Dressing;
+export default Copii;
