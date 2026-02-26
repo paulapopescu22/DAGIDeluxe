@@ -1,0 +1,43 @@
+.termeni-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: #f9f5f1; /* crem deschis */
+  color: #2c1f18; /* pământiu închis pentru text */
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.termeni-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #5a2a1f; /* burgundy pământiu */
+}
+
+.termeni-update {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #7a4c3a;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #5a2a1f;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #2c1f18;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}

@@ -1,0 +1,91 @@
+.cum-lucram-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #4e000d;
+}
+
+.cum-lucram-title {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #470209;
+}
+
+.cum-lucram-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #5d1f1f;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 60px; /* distanță mai mare pentru text față de linia verticală */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px; /* centru linie verticală */
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #bd9a88;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+/* Cercul */
+.timeline-dot {
+  position: absolute;
+  left: 21px; /* poziționat peste linia verticală */
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #a0071c;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Conținutul timeline */
+.timeline-content {
+  margin-left: 40px; /* distanță față de cerc */
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #40020c;
+}
+
+.timeline-content p {
+  margin: 0.5rem 0 0 0;
+  color: #2c1f18;
+  font-size: 1rem;
+}
+
+.timeline-item.active .timeline-content p {
+  display: block;
+}
+
+.cum-lucram-concluzie {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #69000e;
+}

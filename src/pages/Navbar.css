@@ -1,0 +1,30 @@
+.dropdown-despre {
+  position: relative;
+}
+
+.dropdown-menu-custom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff; /* fundal alb */
+  color: #2c1f18; /* text pământiu */
+  min-width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.dropdown-menu-custom a {
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  color: #2c1f18;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu-custom a:hover {
+  background: #f5f1ed; /* highlight subtil */
+}

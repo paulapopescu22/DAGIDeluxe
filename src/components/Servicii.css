@@ -1,0 +1,126 @@
+/* ===== CONTAINER ===== */
+.servicii-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c1f18;
+}
+
+/* ===== TITLU ===== */
+.servicii-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #4a241b;
+  letter-spacing: 0.3px;
+}
+
+.servicii-subtitle {
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
+  color: #6b4a3f;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* linie premium */
+.servicii-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin: 18px auto 0;
+  background: #800020;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+/* ===== GRID ===== */
+.servicii-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+/* ===== CARD PROFESIONAL ===== */
+.serviciu-item {
+  background: #ffffff;
+  padding: 2rem 1.8rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* accent discret */
+.serviciu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: #800020;
+  border-radius: 14px 14px 0 0;
+  transition: width 0.35s ease;
+}
+
+.serviciu-item:hover::before {
+  width: 100%;
+}
+
+/* hover profesional */
+.serviciu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  border-color: rgba(128,0,32,0.25);
+}
+
+/* icon minimalist */
+.serviciu-item::after {
+  content: "●";
+  display: block;
+  font-size: 10px;
+  color: #800020;
+  margin: 0 auto 12px;
+  opacity: 0.7;
+}
+
+/* ===== CTA ===== */
+.servicii-cta {
+  margin-top: 3.5rem;
+}
+
+.servicii-btn {
+  background: #800020;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 22px rgba(128,0,32,0.25);
+}
+
+.servicii-btn:hover {
+  background: #5a0016;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(128,0,32,0.35);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .servicii-container {
+    padding: 4rem 1.5rem;
+  }
+
+  .servicii-title {
+    font-size: 2.1rem;
+  }
+}

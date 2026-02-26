@@ -1,0 +1,116 @@
+:root{
+  --accent:#501221;
+  --accent-dark:#5a0016;
+  --text:#1a1a1a;
+  --light:#f6f6f7;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:white;
+  color:var(--text);
+}
+
+/* CONTAINER */
+.section{
+  padding:100px 0;
+}
+
+/* TITLU */
+.section-title{
+  text-align:center;
+  font-size:2.4rem;
+  font-weight:700;
+  margin-bottom:60px;
+}
+
+/* BUTON PREMIUM */
+.btn-main{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:14px 32px;
+  border-radius:10px;
+  font-weight:600;
+  transition:0.25s;
+}
+
+.btn-main:hover{
+  background:var(--accent-dark);
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* CARD MODERN */
+.product-card{
+  border-radius:16px;
+  overflow:hidden;
+  background:white;
+  transition:0.3s;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+.product-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+/* NAVBAR GLASS */
+.navbar-custom{
+  backdrop-filter: blur(10px);
+  background:rgba(255,255,255,0.7);
+  border-bottom:1px solid #eee;
+}
+
+/* HERO PREMIUM */
+.hero {
+  height: 90vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("/public/images/p1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* optional pentru centrare */
+  color: white;
+}
+
+
+.hero h1{
+  color: rgba(255, 255, 255, 0.676);
+  font-size:3.2rem;
+  font-weight:700;
+}
+
+.hero p{
+  color:#ddd;
+  margin:20px 0 30px;
+  font-size:1.1rem;
+}
+
+/* FEATURES */
+.feature{
+  background:var(--light);
+  padding:40px 30px;
+  border-radius:14px;
+  transition:0.25s;
+}
+
+.feature:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#bbb;
+  padding:60px 0;
+  text-align:center;
+}
