@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - DagiDeluxe</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/logoDagi.png">
+
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<style>
+:root{
+  --visiniu:#800020;
+  --visiniu-dark:#5a0016;
+}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#a5a5a5,#eef1f4);
+}
+
+/* HEADER PREMIUM */
+.header{
+  background:linear-gradient(135deg,var(--visiniu),var(--visiniu-dark));
+  color:white;
+  padding:90px 0;
+  text-align:center;
+  box-shadow:0 10px 30px rgb(255, 255, 255);
+}
+
+/* GLASS CARD */
+.contact-card{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(12px);
+  border-radius:16px;
+  padding:45px;
+  box-shadow:0 15px 40px rgba(255, 255, 255, 0.08);
+  animation:fadeUp 0.6s ease;
+}
+
+/* INPUT STYLE */
+.form-control{
+  border-radius:10px;
+  padding:14px;
+  border:1px solid #e3e3e3;
+  transition:0.25s;
+}
+.form-control:focus{
+  border-color:var(--visiniu);
+  box-shadow:0 0 0 0.2rem rgb(128, 0, 32);
+}
+
+/* BUTTON PREMIUM */
+.btn-main{
+  background:linear-gradient(135deg,var(--visiniu),var(--visiniu-dark));
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:10px;
+  font-weight:600;
+  transition:0.25s;
+}
+.btn-main:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgb(255, 255, 255);
+}
+
+/* INFO CARD */
+.info-box{
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  animation:fadeUp 0.7s ease;
+}
+
+.info-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+  font-size:1.05rem;
+}
+
+.info-icon{
+  font-size:1.3rem;
+  color:var(--visiniu);
+}
+
+/* MAP */
+.map{
+  width:100%;
+  height:320px;
+  border-radius:16px;
+  border:0;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  animation:fadeUp 0.8s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+
+function ContactPage(){
+
+  const [sent, setSent] = React.useState(false);
+
+  function handleSubmit(e){
+    e.preventDefault();
+    setSent(true);
+    e.target.reset();
+  }
+
+  return (
+    <div>
+
+      {/* HEADER */}
+      <div className="header">
+        <h1>Contactează DagiDeluxe</h1>
+        <p>Bine ați venit pe pagina noastră de contact!</p>
+      </div>
+
+      {/* CONTENT */}
+      <div className="container py-5">
+        <div className="row g-4">
+
+          {/* FORM */}
+          <div className="col-lg-7">
+            <div className="contact-card">
+              <h4 className="mb-4 fw-semibold">Trimite un mesaj</h4>
+
+              <form onSubmit={handleSubmit}>
+                <div className="row g-3">
+
+                  <div className="col-md-6">
+                    <input className="form-control" placeholder="Nume" required />
+                  </div>
+
+                  <div className="col-md-6">
+                    <input type="email" className="form-control" placeholder="Email" required />
+                  </div>
+
+                  <div className="col-12">
+                    <input className="form-control" placeholder="Subiect" required />
+                  </div>
+
+                  <div className="col-12">
+                    <textarea className="form-control" rows="5" placeholder="Mesaj" required />
+                  </div>
+
+                  <div className="col-12">
+                    <button className="btn btn-main">Trimite mesaj</button>
+                  </div>
+
+                </div>
+              </form>
+
+              {sent && (
+                <div className="alert alert-success mt-4">
+                  ✔ Mesaj trimis cu succes!
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* INFO */}
+          <div className="col-lg-5">
+            <div className="info-box mb-4">
+              <h5 className="mb-3">Informații contact</h5>
+
+              <div className="info-item">
+                <i className="bi bi-telephone-fill info-icon"></i>
+                0721072995
+              </div>
+
+              <div className="info-item">
+                <i className="bi bi-envelope-fill info-icon"></i>
+                office@dagideluxe.ro
+              </div>
+            </div>
+
+            <iframe
+              className="map"
+              src="https://www.google.com/maps?q=Bucuresti&output=embed">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<ContactPage />);
+
+</script>
+
+</body>
+</html>

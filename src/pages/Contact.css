@@ -1,0 +1,115 @@
+/* Pagina — fundal elegant */
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #59001e, #2a0a0f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Card central premium */
+.contact-card {
+  background: #ffffff;
+  max-width: 850px;
+  width: 100%;
+  padding: 4rem 3rem;
+  border-radius: 18px;
+  box-shadow:
+    0 20px 60px rgba(255, 10, 116, 0.45),
+    0 0 0 1px rgb(232, 6, 92);
+  text-align: center;
+}
+
+/* Titlu elegant */
+.contact-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #680a26;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Text introductiv */
+.contact-intro {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Informații firmă */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.contact-info a {
+  color: #5a0a1d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  opacity: 0.7;
+}
+
+/* Linie separatoare elegantă */
+.contact-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #6e0f2a, transparent);
+  margin: 2.5rem auto;
+}
+
+/* Grid acțiuni */
+.contact-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+/* Butoane premium */
+.action-btn {
+  background: #9b1d3b;
+  color: #fff;
+  border: none;
+  padding: 1.1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  letter-spacing: 0.3px;
+}
+
+/* Hover elegant burgundy */
+.action-btn:hover {
+  background: #6e0f2a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(110,15,42,0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 3rem 2rem;
+  }
+
+  .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+}
