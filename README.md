@@ -1,6 +1,6 @@
 # 📝 DAGIDeluxe
 
-> DAGIDeluxe is a collaborative project developed with DagiDeluxe S.R.L., designed as a subdomain of their existing website. It leverages HTML, CSS, JavaScript, and React for a modern, responsive web experience.
+> DAGIDeluxe is a professional web project developed in collaboration with DagiDeluxe S.R.L., implemented as a subdomain of their main website. It utilizes HTML, CSS, JavaScript, and React to deliver a modern, responsive, and user-friendly experience.
 
 ---
 
