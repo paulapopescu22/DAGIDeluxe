@@ -1,72 +1,96 @@
-# DAGIDeluxe - Custom Furniture Web Application
+# DAGIDeluxe
 
-## Description
+DAGIDeluxe is a professional web project developed in collaboration with **DagiDeluxe S.R.L.**, implemented as a dedicated subdomain to enhance their main website. Built with **HTML, CSS, JavaScript, and React**, the project provides a modern, responsive, and engaging user experience.
 
-DAGIDeluxe is a collaborative project developed with DagiDeluxe S.R.L., designed as a subdomain of their existing website. It leverages HTML, CSS, JavaScript, and React to provide a modern, responsive web experience for showcasing custom furniture and interior design solutions.
+## Table of Contents
+
+- [Overview](#overview)  
+- [Features](#features)  
+- [Technologies](#technologies)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [License](#license)  
+
+## Overview
+
+DAGIDeluxe showcases custom furniture solutions for homes and commercial spaces. The website emphasizes functionality, aesthetics, and seamless user experience, highlighting the company’s portfolio, services, workflow, blog, and contact options.  
 
 ## Features
 
-### Hero Section
-- Engaging introduction with call-to-action to explore the portfolio.
+1. **Cookie Consent Banner (`CookieBanner.js`)**  
+   - Displays a banner prompting users to accept cookies.  
+   - Consent is stored in `localStorage` for persistence.  
+   - Includes a link to a detailed Cookie Policy page.  
 
-### Navbar
-- Navigation with dropdowns for policies, blog, portfolio, and contact.
+2. **Hero Section (`Hero.js`)**  
+   - Prominent introduction banner with slogan.  
+   - "Discover the Collection" button navigates to the portfolio page.  
 
-### Portfolio & Products
-- Interactive grids and sliders to showcase furniture categories:
-  - Kitchen
-  - Living
-  - Bedroom
-  - Dressing
-  - Kids & Teen
-  - Hallways
-  - Bathroom
-  - Commercial Spaces
+3. **Navigation Bar (`Navbar.js`)**  
+   - Fixed top navigation for Portfolio, Blog, How We Work, and Contact.  
+   - Dropdown menu for About Us, linking to Privacy Policy, Cookie Policy, and Terms & Conditions.  
+   - Responsive design with mobile-friendly toggles.  
 
-### Services
-- Overview of furniture categories produced:
-  - Kitchen, Living, Bedroom, Dressing, Kids, Hallway, Bathroom, Commercial
+4. **Features Section (`Features.js`)**  
+   - Highlights company advantages:  
+     - Perfect space adaptation  
+     - Long-term durability  
+     - Balanced aesthetics  
+   - Each feature is visually presented with title and description.  
 
-### Workflow ("Cum Lucram")
-- Step-by-step explanation of DagiDeluxe’s design and production process:
-  1. Initial Contact & Custom Quote  
-  2. On-site Consultation & Measurements  
-  3. Proposal Adjustment & Confirmation  
-  4. Signing & Creative Advance  
-  5. 3D Design: Visual Planning  
-  6. Execution & Finishing  
-  7. Transport & Installation  
-  8. Finalization & Ongoing Support
+5. **Services Section (`Servicii.js`)**  
+   - Lists all customizable furniture offerings: Kitchen, Living, Bedroom, Dressing, Youth, Bathroom, Hallway, Commercial, Children’s Furniture.  
 
-### Features Section
-- Highlights quality, durability, and design philosophy:
-  - Perfect adaptation to real space
-  - Long-term durability
-  - Balanced aesthetics
+6. **Workflow Timeline (`CumLucram.js`)**  
+   - Interactive timeline showing each stage of collaboration, from initial contact to final delivery.  
+   - Clickable stages expand to show detailed descriptions.  
+   - Emphasizes transparency, precision, and professional workflow.  
 
-### Blog
-- Articles about interior design, furniture selection tips, and organization strategies.
+7. **Portfolio Grid (`GridPortofoliu.js`)**  
+   - Interactive grid displaying furniture categories with images.  
+   - Clickable items navigate to individual category pages.  
 
-### Contact
-- Multiple communication channels:
-  - WhatsApp
-  - Facebook Messenger
-  - Phone
-  - Email
-  - Request Offer
-  - Schedule Measurements
+8. **Portfolio Slideshow (`Portofoliu.js`)**  
+   - Carousel of featured furniture projects using **React-Slick**.  
+   - Auto-rotating slides with clickable navigation to the full portfolio grid.  
 
-### Cookie Banner
-- GDPR-compliant cookie notice with delayed display and localStorage tracking.
+9. **Blog Section (`Blog.js`)**  
+   - Lists blog posts with image, title, description, and emoji icons.  
+   - Provides design and furniture tips, trends, and organizational advice.  
 
-### Footer
-- Legal links (Privacy, Cookie Policy, Terms & Conditions)  
-- Company logos and accreditation badges
+10. **Contact Section (`Contact.js`)**  
+    - Displays company contact information, including phone, email, WhatsApp, and Messenger.  
+    - Interactive buttons for requesting quotes or scheduling measurements.  
+    - Uses icons from **React-Icons** for clarity and usability.  
 
-## Installation and Running
+11. **Footer (`Footer.js`)**  
+    - Includes links to Privacy Policy, Cookie Policy, and Terms & Conditions.  
+    - Displays company logo, copyright, and certification logos.  
 
-1. Clone the repository
+12. **Legal Pages**  
+    - Dedicated pages for Privacy Policy, Terms & Conditions, and Cookie Policy.  
 
-```sh
-git clone https://github.com/paulapopescu22/DAGIDeluxe.git
-cd DAGIDeluxe
+### Additional Features
+
+- Fully responsive design for desktop and mobile.  
+- Smooth animations with **Framer Motion**.  
+- Modular component structure for easy maintenance and scalability.  
+- Local storage handling for cookie consent.  
+
+## Technologies
+
+- React 18  
+- React Router DOM  
+- JavaScript (ES6+)  
+- HTML5 & CSS3  
+- Framer Motion (animations)  
+- React Slick (carousel/slideshow)  
+- Bootstrap 5  
+- React Icons  
+- Local Storage API  
+
+## Installation
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/paulapopescu22/DAGIDeluxe.git
