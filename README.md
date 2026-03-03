@@ -1,6 +1,3 @@
-## 2️⃣ DAGIDeluxe - React Project (complete, English)
-
-```markdown
 # DAGIDeluxe - Custom Furniture Web Application
 
 ## Description
