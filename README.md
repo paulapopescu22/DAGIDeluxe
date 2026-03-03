@@ -92,25 +92,27 @@ DAGIDeluxe showcases custom furniture solutions for homes and commercial spaces.
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/paulapopescu22/DAGIDeluxe.git
-
-3. Navigate to the project folder:
+   ```
+2. Navigate to the project folder:
+   ```sh
    cd DAGIDeluxe
-
-4. Install dependencies:
+   ```
+3. Install dependencies:
+   ```sh
    npm install
-   
-6. Start the development server:
+   ```
+4. Start the development server:
+    ```sh
    npm start
-
-8. Open the app at http://localhost:3000
+   ```
+5. Open the app at:
+   ```sh
+   http://localhost:3000
+   ```
  in your browser.
 
 ## Authors
-Popescu Paula-Marta
+- Popescu Paula-Marta
 
-
-   
-   ```bash
-   git clone https://github.com/paulapopescu22/DAGIDeluxe.git
