@@ -1,0 +1,123 @@
+.despre-page {
+  padding-bottom: 100px;
+}
+
+/* INTRO */
+.despre-intro {
+  max-width: 750px;
+  margin: 70px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.despre-label {
+  display: inline-block;
+  background: #800020;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.despre-intro p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* VALORI */
+.despre-valori {
+  max-width: 1100px;
+  margin: 90px auto 0;
+  padding: 0 20px;
+}
+
+.despre-valori-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.despre-valoare-card {
+  background: linear-gradient(160deg, #fdf3f0 0%, #f6ecee 100%);
+  border: 1px solid #f0dde1;
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.despre-valoare-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(128, 0, 32, 0.15);
+}
+
+.despre-valoare-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #800020;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.despre-valoare-card h3 {
+  font-size: 1.25rem;
+  color: #5d051b;
+  margin-bottom: 12px;
+}
+
+.despre-valoare-card p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* REVIEWS WRAPPER */
+.despre-reviews-wrap {
+  max-width: 1100px;
+  margin: 100px auto 0;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #800020 0%, #5d051b 100%);
+  border-radius: 24px;
+}
+
+.despre-reviews-wrap .reviews-title {
+  color: #fff;
+}
+
+.despre-reviews-wrap .review-stars {
+  color: #e8c468;
+}
+
+.despre-reviews-wrap .review-text {
+  color: #f6e9ec;
+}
+
+.despre-reviews-wrap .review-name {
+  color: #e8c468;
+}
+
+.despre-reviews-wrap .review-dot {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.despre-reviews-wrap .review-dot.active {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .despre-valori,
+  .despre-reviews-wrap {
+    margin-top: 60px;
+  }
+}

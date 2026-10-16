@@ -1,9 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import "../pages/Navbar.css";
 
-function Navbar({ scrollToPortfolio }) {
+function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handlePortofoliuClick = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -21,8 +30,9 @@ function Navbar({ scrollToPortfolio }) {
         <div className="ms-auto d-flex align-items-center">
           {/* Portofoliu */}
           <button
+            type="button"
             className="btn nav-link d-inline mx-3"
-            onClick={scrollToPortfolio}
+            onClick={handlePortofoliuClick}
           >
             Portofoliu
           </button>
@@ -43,12 +53,13 @@ function Navbar({ scrollToPortfolio }) {
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
-            <span className="nav-link d-inline dropdown-trigger">
+            <Link to="/despre" className="nav-link d-inline dropdown-trigger">
               Despre noi ▾
-            </span>
+            </Link>
 
             {open && (
               <div className="dropdown-menu-custom">
+                <Link to="/despre">Despre noi</Link>
                 <Link to="/politica">Politica de Confidențialitate</Link>
                 <Link to="/cookie">Politica de Cookies</Link>
                 <Link to="/termeni">Termeni și Condiții</Link>

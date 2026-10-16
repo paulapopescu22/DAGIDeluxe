@@ -72,12 +72,13 @@ body{
 /* HERO PREMIUM */
 .hero {
   height: 90vh;
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("/public/images/p1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center; /* optional pentru centrare */
+  text-align: center;
   color: white;
 }
 
@@ -90,7 +91,8 @@ body{
 
 .hero p{
   color:#ddd;
-  margin:20px 0 30px;
+  margin:20px auto 30px;
+  max-width:650px;
   font-size:1.1rem;
 }
 
