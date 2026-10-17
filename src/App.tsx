@@ -1,36 +1,36 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Products from "./components/Products.jsx";
-import Features from "./components/Features.jsx";
-import Servicii from "./components/Servicii.jsx"; // Secțiunea Servicii
-import Footer from "./components/Footer.jsx";
-import CookieBanner from "./components/CookieBanner.jsx";
-import ChatBot from "./components/ChatBot.jsx";
-import ScrollToTop from "./components/ScrollToTop.jsx";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
+import Features from "./components/Features";
+import Servicii from "./components/Servicii"; // Secțiunea Servicii
+import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
+import ChatBot from "./components/ChatBot";
+import ScrollToTop from "./components/ScrollToTop";
 
-import Portofoliu from "./pages/Portofoliu.jsx";
-import Despre from "./pages/Despre.jsx";
-import Contact from "./pages/Contact.jsx";
-import Blog from "./pages/Blog.jsx";
-import BlogPost from "./pages/BlogPost.jsx";
-import CumLucram from "./pages/CumLucram.jsx";
+import Portofoliu from "./pages/Portofoliu";
+import Despre from "./pages/Despre";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import CumLucram from "./pages/CumLucram";
 
-import GridPortofoliu from "./pages/GridPortofoliu.jsx";
-import Politica from "./pages/Politica.jsx";
-import Cookies from "./pages/Cookie.jsx";
-import Termeni from "./pages/Termeni.jsx";
+import GridPortofoliu from "./pages/GridPortofoliu";
+import Politica from "./pages/Politica";
+import Cookies from "./pages/Cookie";
+import Termeni from "./pages/Termeni";
 
-import Bucatarie from "./pages/Bucatarie.jsx";
-import Living from "./pages/Living.jsx";
-import Dormitor from "./pages/Dormitor.jsx";
-import Dressing from "./pages/Dressing.jsx";
-import Copii from "./pages/Copii.jsx";
-import Hol from "./pages/Hol.jsx";
-import Baie from "./pages/Baie.jsx";
-import Comercial from "./pages/Comercial.jsx";
+import Bucatarie from "./pages/Bucatarie";
+import Living from "./pages/Living";
+import Dormitor from "./pages/Dormitor";
+import Dressing from "./pages/Dressing";
+import Copii from "./pages/Copii";
+import Hol from "./pages/Hol";
+import Baie from "./pages/Baie";
+import Comercial from "./pages/Comercial";
 
 
 import "./App.css";

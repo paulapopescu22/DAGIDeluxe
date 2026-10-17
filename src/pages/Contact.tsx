@@ -76,7 +76,7 @@ function Contact() {
             </div>
 
             <input className="contact-input" placeholder="Subiect" required />
-            <textarea className="contact-input" rows="5" placeholder="Mesaj" required />
+            <textarea className="contact-input" rows={5} placeholder="Mesaj" required />
 
             <button type="submit" className="action-btn contact-form-submit">
               Trimite mesaj

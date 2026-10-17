@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { FaTimes, FaPaperPlane } from "react-icons/fa";
 import "./ChatBot.css";
 
-function RobotMascot({ className = "" }) {
+function RobotMascot({ className = "" }: { className?: string }) {
   return (
     <svg
       className={`robot-mascot ${className}`}
@@ -24,7 +24,7 @@ function RobotMascot({ className = "" }) {
   );
 }
 
-function BotAvatar({ className }) {
+function BotAvatar({ className }: { className?: string }) {
   return (
     <span className={`chatbot-avatar ${className || ""}`} role="img" aria-label="Asistent DagiDeluxe">
       <RobotMascot />

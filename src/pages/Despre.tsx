@@ -1,6 +1,6 @@
 import { FaDraftingCompass, FaTree, FaTools } from "react-icons/fa";
 import "./Despre.css";
-import Reviews from "../components/Reviews.jsx";
+import Reviews from "../components/Reviews";
 
 const valori = [
   {
