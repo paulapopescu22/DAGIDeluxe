@@ -19,14 +19,14 @@ function Portofoliu() {
   };
 
   const slideshowImages = [
-    "/images/images-kitchen/MDF-Vopsit/albastru/IMG_20170131_205904.jpg",
-    "/images/images-comercial/p33.jpg",
-    "/images/images-dressing/p17.jpg",
-    "/images/images-kitchen/p4.jpg",
-    "/images/images-living/p10.jpg",
-    "/images/images-kitchen/p6.jpg",
-    "/images/images-comercial/p35.jpg",
-    "/images/images-kitchen/p36.jpg",
+    (process.env.PUBLIC_URL + "/images/images-kitchen/MDF-Vopsit/albastru/IMG_20170131_205904.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-comercial/p33.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p17.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-kitchen/p4.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-living/p10.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-kitchen/p6.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-comercial/p35.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-kitchen/p36.jpg"),
 
   ];
 

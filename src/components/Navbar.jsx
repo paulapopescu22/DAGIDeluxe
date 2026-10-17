@@ -20,7 +20,7 @@ function Navbar() {
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src="/images/logoDagi.png"
+            src={process.env.PUBLIC_URL + "/images/logoDagi.png"}
             alt="DagiDeluxe"
             height="60"
             className="me-2"

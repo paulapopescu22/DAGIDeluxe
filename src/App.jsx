@@ -9,6 +9,7 @@ import Servicii from "./components/Servicii.jsx"; // Secțiunea Servicii
 import Footer from "./components/Footer.jsx";
 import CookieBanner from "./components/CookieBanner.jsx";
 import ChatBot from "./components/ChatBot.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 import Portofoliu from "./pages/Portofoliu.jsx";
 import Despre from "./pages/Despre.jsx";
@@ -37,6 +38,7 @@ import "./App.css";
 function AppContent() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -93,7 +95,7 @@ function AppContent() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AppContent />
     </BrowserRouter>
   );

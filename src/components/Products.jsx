@@ -8,7 +8,7 @@ function Products() {
 
           <div className="col-md-4">
             <div className="product-card">
-              <img src="/images/Materiale/vopsit.jpg" alt="MDF vopsit" />
+              <img src={process.env.PUBLIC_URL + "/images/Materiale/vopsit.jpg"} alt="MDF vopsit" />
               <div className="p-4 text-center">
                 <h5>MDF-Vopsit</h5>
                 <p>Suprafață netedă și uniformă, ideală pentru mobilier modern și finisaje elegante.</p>
@@ -19,7 +19,7 @@ function Products() {
 
           <div className="col-md-4">
             <div className="product-card">
-              <img src="/images/Materiale/infoliat.jpg" alt="MDF infoliat" />
+              <img src={process.env.PUBLIC_URL + "/images/Materiale/infoliat.jpg"} alt="MDF infoliat" />
               <div className="p-4 text-center">
                 <h5>MDF-Infoliat</h5>
                 <p>Protecție și varietate de culori sau texturi pentru mobilier.</p>
@@ -30,7 +30,7 @@ function Products() {
 
           <div className="col-md-4">
             <div className="product-card">
-              <img src="/images/Materiale/pal.jpg" alt="PAL" />
+              <img src={process.env.PUBLIC_URL + "/images/Materiale/pal.jpg"} alt="PAL" />
               <div className="p-4 text-center">
                 <h5>PAL</h5>
                 <p>Rezistent și accesibil, folosit frecvent la construcția mobilierului.</p>

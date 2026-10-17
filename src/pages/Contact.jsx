@@ -1,15 +1,22 @@
-import React from "react";
-import { 
-  FaWhatsapp, 
-  FaFacebookMessenger, 
-  FaPhone, 
-  FaEnvelope, 
-  FaFileInvoice, 
-  FaRulerCombined 
+import React, { useState } from "react";
+import {
+  FaWhatsapp,
+  FaFacebookMessenger,
+  FaPhone,
+  FaEnvelope,
+  FaFileInvoice,
+  FaRulerCombined
 } from "react-icons/fa";
 import "./Contact.css";
 
 function Contact() {
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSent(true);
+    e.target.reset();
+  };
 
   const actions = [
     { label: "WhatsApp", icon: <FaWhatsapp />, href: "https://wa.me/40721072995", external: true },
@@ -55,6 +62,36 @@ function Contact() {
               </a>
             )
           )}
+        </div>
+
+        <div className="contact-divider" />
+
+        <div className="contact-form-map">
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <h2 className="contact-subtitle">Trimite un mesaj</h2>
+
+            <div className="contact-form-row">
+              <input className="contact-input" placeholder="Nume" required />
+              <input type="email" className="contact-input" placeholder="Email" required />
+            </div>
+
+            <input className="contact-input" placeholder="Subiect" required />
+            <textarea className="contact-input" rows="5" placeholder="Mesaj" required />
+
+            <button type="submit" className="action-btn contact-form-submit">
+              Trimite mesaj
+            </button>
+
+            {sent && (
+              <p className="contact-form-success">✔ Mesaj trimis cu succes!</p>
+            )}
+          </form>
+
+          <iframe
+            className="contact-map"
+            title="Locație DagiDeluxe"
+            src="https://www.google.com/maps?q=Timisoara&output=embed"
+          />
         </div>
       </div>
     </div>

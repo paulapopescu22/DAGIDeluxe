@@ -4,7 +4,7 @@ const blogPosts = [
     title: "Din ce material comand mobila?",
     description:
       "PAL, MDF sau lemn masiv? Îți explicăm diferențele dintre materiale ca să alegi varianta potrivită pentru proiectul tău.",
-    img: "/images/Materiale/vopsit.jpg",
+    img: (process.env.PUBLIC_URL + "/images/Materiale/vopsit.jpg"),
     content: [
       "Una dintre primele întrebări pe care și le pune orice client atunci când comandă mobilă este din ce material ar trebui făcută. Răspunsul depinde de buget, de spațiul în care va fi montată și de cât de solicitată va fi piesa respectivă în timp.",
       "PAL-ul melaminat este cea mai accesibilă variantă și acoperă bine nevoile unui dulap de haine sau ale unei biblioteci, dar este mai sensibil la umiditate. MDF-ul vopsit sau fălțuit oferă un aspect mai premium, muchii rotunjite și o rezistență mai bună, motiv pentru care este preferat pentru fronturi de bucătărie sau mobilier din baie.",
@@ -17,7 +17,7 @@ const blogPosts = [
     title: "Cu ce accesorii îți personalizezi mobila la comandă?",
     description:
       "Feronerie și accesorii care transformă o piesă simplă de mobilier într-una funcțională, durabilă și plăcută la utilizare.",
-    img: "/images/images-kitchen/p2.jpg",
+    img: (process.env.PUBLIC_URL + "/images/images-kitchen/p2.jpg"),
     content: [
       "Feroneria este partea din mobilă pe care clienții o observă cel mai puțin, dar de care depinde cel mai mult experiența zilnică: balamale, glisiere, amortizoare, sisteme de organizare interioară. Diferența dintre o piesă de mobilier plăcută la folosit și una frustrantă stă aproape mereu aici.",
       "La bucătărie, accesoriile corecte înseamnă sertare care se închid lin, coșuri de reciclare integrate și soluții de depunere a spațiului din colțuri. La dressing, vorbim despre bare de haine culisante, organizatoare pentru accesorii și sisteme de iluminat interior.",
@@ -30,7 +30,7 @@ const blogPosts = [
     title: "Cât mă costă să îmi fac mobila pe comandă?",
     description:
       "Ce factori influențează prețul mobilei la comandă și cum te poți orienta atunci când îți stabilești bugetul.",
-    img: "/images/images-kitchen/p1.jpg",
+    img: (process.env.PUBLIC_URL + "/images/images-kitchen/p1.jpg"),
     content: [
       "Este una dintre cele mai frecvente întrebări și, din păcate, nu are un răspuns unic — prețul unei piese de mobilier la comandă depinde de mai mulți factori care se combină diferit de la proiect la proiect.",
       "Materialul ales (PAL, MDF sau lemn masiv), complexitatea designului, numărul și calitatea accesoriilor, precum și tipul de finisaj influențează direct costul final. O bucătărie cu fronturi simple, din PAL, va costa mult mai puțin decât una cu fronturi vopsite și sisteme premium de sertare.",
@@ -43,7 +43,7 @@ const blogPosts = [
     title: "Să cumpăr din magazin sau să fac mobilă la comandă?",
     description:
       "Comparăm cele două variante, cu avantaje și limite, ca să alegi soluția care se potrivește cu adevărat spațiului tău.",
-    img: "/images/images-living/p8.jpg",
+    img: (process.env.PUBLIC_URL + "/images/images-living/p8.jpg"),
     content: [
       "Mobila din magazin are un avantaj clar: este disponibilă rapid și, de multe ori, mai ieftină la prima vedere. Problema apare atunci când spațiul tău nu are dimensiuni standard sau când vrei o soluție care să folosească fiecare colț disponibil.",
       "Mobila la comandă este gândită special pentru spațiul tău — ține cont de înălțimea tavanului, de nișe, de poziția prizelor sau a țevilor și de modul în care te miști efectiv prin cameră. Asta înseamnă mai puțin spațiu pierdut și o funcționalitate mult mai bună pe termen lung.",
@@ -56,7 +56,7 @@ const blogPosts = [
     title: "Când este timpul să cerem mobilă la comandă?",
     description:
       "Repere utile pentru momentul potrivit în care merită să investești în mobilier personalizat, cameră cu cameră.",
-    img: "/images/images-bedroom/p12.jpg",
+    img: (process.env.PUBLIC_URL + "/images/images-bedroom/p12.jpg"),
     content: [
       "Nu există un moment universal valabil, dar există câteva situații clare în care mobila la comandă chiar își arată valoarea. Bucătăria este, de cele mai multe ori, prima zonă unde merită investiția — se folosește zilnic și beneficiază cel mai mult de o organizare gândită exact pentru spațiul tău.",
       "Camera de zi permite mai multă flexibilitate, dar o bibliotecă sau un sistem de depozitare pe măsură poate rezolva elegant problemele de spațiu. Dormitorul cere, în schimb, materiale durabile și un dressing bine organizat, mai ales dacă spațiul este limitat.",
@@ -69,7 +69,7 @@ const blogPosts = [
     title: "De ce este așa scumpă mobila la comandă?",
     description:
       "Ce stă în spatele prețului: materiale de calitate, manoperă atentă și finisaje realizate pe măsura fiecărui client.",
-    img: "/images/images-dressing/p17.jpg",
+    img: (process.env.PUBLIC_URL + "/images/images-dressing/p17.jpg"),
     content: [
       "La prima vedere, mobila la comandă poate părea mai scumpă decât cea din magazin, însă prețul reflectă de fapt un întreg proces: proiectare individuală, măsurători exacte, materiale alese special pentru proiectul tău și manoperă dedicată, nu producție de serie.",
       "Fiecare piesă este gândită pentru spațiul exact în care va fi montată, ceea ce înseamnă timp suplimentar de proiectare și execuție față de o piesă standard, produsă în mii de exemplare identice.",

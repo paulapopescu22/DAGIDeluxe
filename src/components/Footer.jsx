@@ -21,19 +21,19 @@ function Footer() {
       <div className="footer-bottom">
         <p className="footer-copy">Copyright © 2013 – 2025 – DagiDeluxe</p>
         <img
-          src="/images/logoDagi.png"
+          src={process.env.PUBLIC_URL + "/images/logoDagi.png"}
           alt="DagiDeluxe"
           className="footer-logo"
         />
       </div>
       <div className="footer-bottom2">
         <img
-          src="/images/ANPC/SAL.png.webp"
+          src={process.env.PUBLIC_URL + "/images/ANPC/SAL.png.webp"}
           alt="DagiDeluxe"
           className="footer-logo"
         />
         <img
-          src="/images/ANPC/SOL.png.webp"
+          src={process.env.PUBLIC_URL + "/images/ANPC/SOL.png.webp"}
           alt="DagiDeluxe"
           className="footer-logo"
         />

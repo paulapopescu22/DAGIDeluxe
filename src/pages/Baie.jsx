@@ -41,24 +41,24 @@ function Baie() {
   const materials = [
       {
       title: "Mobilă de Hol din MDF Vopsit",
-      img: "/images/Materiale/vopsit.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/vopsit.jpg"),
       desc: "MDF vopsit oferă un finisaj elegant și neted, perfect pentru holuri moderne sau clasice, durabil și personalizabil.",
     },
     {
       title: "Mobilă de Hol din MDF Înfoliat",
-      img: "/images/Materiale/infoliat.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/infoliat.jpg"),
       desc: "MDF înfoliat, ușor de întreținut, rezistent la zgârieturi și abur, cu multiple texturi și culori.",
     },
     {
       title: "Mobilă de Hol din PAL Melaminat",
-      img: "/images/Materiale/pal.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/pal.jpg"),
       desc: "PAL melaminat, o soluție accesibilă, durabilă și practică, ideală pentru holuri funcționale și familiare.",
     },
   ];
 
   const images = [
-    "/images/images-bathroom/p28.jpg",
-    "/images/images-bathroom/p29.jpg",
+    (process.env.PUBLIC_URL + "/images/images-bathroom/p28.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-bathroom/p29.jpg"),
   ];
 
   return (

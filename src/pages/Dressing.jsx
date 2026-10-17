@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Dressing() {
@@ -40,30 +41,30 @@ function Dressing() {
   const materials = [
       {
       title: "Mobilă de Hol din MDF Vopsit",
-      img: "/images/Materiale/vopsit.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/vopsit.jpg"),
       desc: "MDF vopsit oferă un finisaj elegant și neted, perfect pentru holuri moderne sau clasice, durabil și personalizabil.",
     },
     {
       title: "Mobilă de Hol din MDF Înfoliat",
-      img: "/images/Materiale/infoliat.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/infoliat.jpg"),
       desc: "MDF înfoliat, ușor de întreținut, rezistent la zgârieturi și abur, cu multiple texturi și culori.",
     },
     {
       title: "Mobilă de Hol din PAL Melaminat",
-      img: "/images/Materiale/pal.jpg",
+      img: (process.env.PUBLIC_URL + "/images/Materiale/pal.jpg"),
       desc: "PAL melaminat, o soluție accesibilă, durabilă și practică, ideală pentru holuri funcționale și familiare.",
     },
   ];
 
   const images = [
-    "/images/images-dressing/p17.jpg",
-    "/images/images-dressing/p18.jpg",
-    "/images/images-dressing/p19.jpg",
-    "/images/images-dressing/p20.jpg",
-    "/images/images-dressing/p21.jpg",
-    "/images/images-dressing/p22.jpg",
-    "/images/images-dressing/p23.jpg",
-    "/images/images-dressing/p24.jpg",
+    (process.env.PUBLIC_URL + "/images/images-dressing/p17.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p18.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p19.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p20.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p21.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p22.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p23.jpg"),
+    (process.env.PUBLIC_URL + "/images/images-dressing/p24.jpg"),
 
 
   ];
